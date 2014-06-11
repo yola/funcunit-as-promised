@@ -48,6 +48,12 @@ fp.getText(".siteName");
 
 Get functions return a promise, but that promise is resolved immediately, as there is no condition for funcunit-as-promised to poll for.
 
+## Lint it
+
+```
+$ npm run jshint
+```
+
 ## Build it
 
 ```

@@ -1,3 +1,5 @@
+"use strict";
+
 var poller = require("./poller");
 var q = require("q");
 var f = require("funcunit");
@@ -38,7 +40,7 @@ var anyVisible = function(args){
 };
 
 var isTextEqual = function(args){
-    var actualText = F(args.selector, frameNumber).text();
+    var actualText = f(args.selector, frameNumber).text();
     return actualText === args.expectedText;
 };
 

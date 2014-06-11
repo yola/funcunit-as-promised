@@ -1,3 +1,5 @@
+"use strict";
+
 var q = require("q");
 
 var delay = function(ms){
