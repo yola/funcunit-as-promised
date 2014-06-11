@@ -12,12 +12,6 @@
     "funcunit": "bower_components/funcunit/dist/funcunit.js"
   },
   "browserify-shim": {
-    "jquery": "global:$",
-    "spine-ajax": {
-      "depends": [
-        "spine"
-      ]
-    },
     "funcunit": {
       "depends": [
         "jquery"
