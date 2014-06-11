@@ -40,7 +40,7 @@ If we want to simply get the text of an element, we do this:
 ```javascript
 var fp = require("funcunit-as-promised");
 
-fp.getText(".siteName");
+fp.getText(".siteName")
 .then(function(siteName){
     console.log("The site name is " + siteName);
 });
