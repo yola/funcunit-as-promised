@@ -1,0 +1,22 @@
+{
+  "name": "funcunit-as-promised",
+  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/yola/funcunit-as-promised",
+  "authors": [
+    "Yola Engineering <engineers@yola.com>"
+  ],
+  "description": "Promise based interface for funcunit",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "funcunit": "2.0.x"
+  }
+}

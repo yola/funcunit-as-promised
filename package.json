@@ -1,0 +1,53 @@
+{
+  "name": "funcunit-as-promised",
+  "version": "0.0.0",
+  "description": "Promise based interface for funcunit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "builddist": "browserify -e index.js -o dist/funcunit-as-promised.js -s fp"
+  },
+  "browser": {
+    "funcunit": "bower_components/funcunit/dist/funcunit.js"
+  },
+  "browserify-shim": {
+    "jquery": "global:$",
+    "spine-ajax": {
+      "depends": [
+        "spine"
+      ]
+    },
+    "funcunit": {
+      "depends": [
+        "jquery"
+      ],
+      "exports": "global:FuncUnit"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yola/funcunit-as-promised.git"
+  },
+  "author": "Yola Engineering <engineers@yola.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yola/funcunit-as-promised/issues"
+  },
+  "homepage": "https://github.com/yola/funcunit-as-promised",
+  "dependencies": {
+    "jshint": "2.5.x",
+    "jsgreat": "0.1.1",
+    "q": "~1.0.1",
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "browserify": "~4.1.9",
+    "browserify-shim": "~3.5.0",
+    "bower": "~1.3.5"
+  }
+}
