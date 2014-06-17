@@ -2,7 +2,7 @@
   "name": "funcunit-as-promised",
   "version": "0.0.1",
   "description": "Promise based interface for funcunit",
-  "main": "index.js",
+  "main": "dist/funcunit-as-promised.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "builddist": "browserify -e index.js -o dist/funcunit-as-promised.js -s fp",
