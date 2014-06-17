@@ -17,6 +17,6 @@
     "tests"
   ],
   "dependencies": {
-    "funcunit": "2.0.x"
+    "funcunit": "2.1.0-pre"
   }
 }
