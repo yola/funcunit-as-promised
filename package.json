@@ -8,22 +8,6 @@
     "builddist": "browserify -e index.js -o dist/funcunit-as-promised.js -s fp",
     "jshint": "jshint index.js poller.js --config node_modules/jsgreat/.jshintrc"
   },
-  "browser": {
-    "funcunit": "bower_components/funcunit/dist/funcunit.js"
-  },
-  "browserify-shim": {
-    "funcunit": {
-      "depends": [
-        "jquery"
-      ],
-      "exports": "global:FuncUnit"
-    }
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/yola/funcunit-as-promised.git"

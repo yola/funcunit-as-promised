@@ -2,7 +2,7 @@
 
 var poller = require("./poller");
 var q = require("q");
-var f = require("funcunit");
+var f = require("./bower_components/funcunit/dist/funcunit");
 
 var frameNumber = false;
 
