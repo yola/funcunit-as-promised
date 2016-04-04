@@ -8,6 +8,10 @@ var frameNumber = false;
 
 var exports = {};
 
+exports.setTimeout = function(timeout) {
+  this.timeout = timeout;
+};
+
 exports.switchToFrame = function(newFrameNumber){
     return q.fcall(function(){
         frameNumber = newFrameNumber;
@@ -63,7 +67,8 @@ exports.assertVisible = function(selector){
         evaluator: isVisible,
         args: {
             selector: selector
-        }
+        },
+        timeout: exports.timeout
     });
 };
 
@@ -73,7 +78,8 @@ exports.assertAnyVisible = function(selectors){
         evaluator: anyVisible,
         args: {
             selectors: selectors
-        }
+        },
+        timeout: exports.timeout
     });
 };
 
@@ -84,7 +90,8 @@ exports.assertTextEquals = function(selector, expectedText){
         args: {
             selector: selector,
             expectedText: expectedText
-        }
+        },
+        timeout: exports.timeout
     });
 };
 
@@ -95,7 +102,8 @@ exports.assertSize = function(selector, expectedSize){
         args: {
             selector: selector,
             expectedSize: expectedSize
-        }
+        },
+        timeout: exports.timeout
     });
 };
 
